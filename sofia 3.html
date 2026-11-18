@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Sofia Hernandez — Graphic Designer & Visual Artist</title>
+
+  <!-- Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* GLOBAL */
+body {
+  margin: 0;
+  background: #F7F7F7; /* Soft Paper White */
+  font-family: 'Inter', sans-serif;
+  color: #0A0A0A; /* Charcoal */
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* NAVIGATION */
+nav {
+  position: sticky;
+  top: 0;
+  background: #0A0A0A; /* Charcoal */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-size: 26px;
+}
+
+nav a {
+  color: #A8DADC; /* Soft Blue-Gray */
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #0F7A5C; /* Emerald */
+}
+
+/* HERO */
+header {
+  background: #0A0A0A; /* Charcoal */
+  color: white;
+  padding: 160px 40px;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+header h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  margin: 0;
+}
+
+header p {
+  font-size: 22px;
+  opacity: 0.85;
+  margin-top: 12px;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+h2.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #000000; /* Emerald */
+}
+
+/* 2-COLUMN GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* PROJECT CARD */
+.project {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #000000; /* Emerald accent stripe */
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 40px rgba(15,122,92,0.25); /* Emerald glow */
+}
+
+.project h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  font-size: 26px;
+  color: #000000; /* Emerald */
+}
+
+.project p {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* ABOUT */
+#about p {
+  max-width: 800px;
+  font-size: 20px;
+  color: #1D3557; /* Slate Blue-Gray */
+}
+
+/* CONTACT */
+#contact p {
+  font-size: 20px;
+  color: #1D3557;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 60px;
+  background: #0A0A0A; /* Charcoal */
+  color: #A8DADC; /* Soft Blue-Gray */
+  font-size: 14px;
+  margin-top: 80px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+    /* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.pdf-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  background: var(--emerald);
+  color: #0b1cb8;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>Sofia Hernandez</h1>
+  <div>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<header>
+  <h2>Graphic Designer & Visual Artist</h2>
+  <p>Bold visuals. Editorial layouts. Modern storytelling.</p>
+</header>
+
+<!-- WORK SECTION -->
+<section id="work">
+  <h2>Work</h2>
+
+
+  <div class="grid">
+
+    <!-- 1 -->
+    <div class="project">
+      <img src="images/breast-cancer-poster.jpg">
+      <h3>Breast cancer awareness poster</h3>
+      <p>A bold awareness poster blending illustration and typography to honor strength, unity, and survivorship.</p>
+    </div>
+
+    <!-- 2 -->
+   <div class="project">
+  <h3>Japan Travel Brochure</h3>
+
+  <div class="project-group">
+    <img src="images/japan-brochure-idea (1).jpg"alt="">
+    <img src="images/japan-brochure-idea (2).jpg"alt="">
+  </div>
+
+      <p>A three‑panel brochure combining photography, typography, and travel guidance in a clean, modern layout.</p>
+    </div>
+
+    <!-- 4 -->
+ <div class="project">
+  <h3>Menu idea</h3>
+
+  <div class="project-group">
+    <img src="images/menu-idea-(1).jpg"alt="">
+    <img src="images/menu-idea-(2).jpg"alt="">
+    <img src="images/menu-idea-(3).jpg"alt="">
+    <img src="images/menu-idea-(4).jpg"alt="">
+  </div>
+
+  <p>A four‑piece illustrated series inspired by Tarantino’s iconic visual language.</p>
+</div>
+
+    <!-- 8 -->
+     <div class="project">
+  <h3>Newsletter example</h3>
+
+  <div class="project-group">
+    <img src="images/newsletter-example-(1).jpg"alt="">
+    <img src="images/newsletter-example-(2).jpg"alt="">
+    <img src="images/newsletter-example-(3).jpg"alt="">
+    <img src="images/newsletter-example-(4).jpg"alt="">
+  </div>
+   <p>A magazine‑style article layout combining typography, illustration, and structured informational design. 
+  </div>
+    <!-- 12 -->
+    <div class="project">
+  <h3>Postcard</h3>
+
+  <div class="project-group">
+    <img src="images/postcard-(1).jpg"alt="">
+    <img src="images/postcard-(3).jpg"alt="">
+   
+  </div>
+      <h3>Design Talks — Event Poster</h3>
+      <p>A modern postcard layout promoting a creative lecture series with clean typography and balanced composition.</p>
+    </div>
+
+    <!-- 13 -->
+   
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I’m Sofia — a Detroit‑based graphic designer and visual artist specializing in posters, editorial layouts, and digital artwork.  
+    My work blends bold typography, modern composition, and clean visual storytelling to create designs that feel intentional, expressive, and unforgettable.
+  <section id="about">
+  <h2>Want to hire me?</h2>
+  <p>Here is my resume if you'd like to view or download it. I would love to have an opportunity to work with you and expand my skills.</p>
+
+  <a href="pdf/Resume.pdf" target="_blank" class="pdf-link">View My Resume</a>
+</section>
+
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: sofiagh1956@gmail.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Sofia Hernandez — All Rights Reserved
+</footer>
+
+</body>
+</html> 
+
